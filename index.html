@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddhant Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo-color.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#services">Services</a></li> -->
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Computer Science Student</p>
+            <h1>Hi, I'm <span>Siddhant</span><br>Jain from India</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Siddhant pic.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, I am a final-year student at Thapar Institute of Engineering and Technology, Patiala, pursuing a B.E. in Computer Engineering with an Elective in Data Science. I have a strong passion for Data Science, Machine Learning, and Artificial Intelligence. I thrive on problem-solving and regularly engage with platforms such as Leetcode and Codestudio. I enjoy applying my skills to real-world problems through various projects.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>DSA and Problem-Solving skills</span><br>Regularly solve coding problems and give contests on Leetcode and Codestudio primarly in C++</li>
+                        <li><span>Data Science</span><br>Knowledge of Data Science Fundamentals, AI, ML, NLP, Computer Vision and Deep Learning</li>
+                        <li><span>Web Development</span><br>Building websites using HTML,CSS and Javascript</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>August 2024 - Present</span><br><b>Student Placement Representative(SPR)</b> at TIET,Patiala</li>
+                        <li><span>June -July 2024</span><br><b>Artificial Intelligence Intern</b> at <b>Infosys Springboard</b></li> 
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021 - 2025</span><br>B.E. in <b>Computer Engineering (Thapar Institute of Engineering and Technology, Patiala)</b><br>Current CGPA - <b>8.35</b></li>
+                        <li><span>2019 - 2021</span><br>Class XII CBSE Board<br>96.4% PCM(100 in English)</li>
+                        <li><span>2017 - 2019</span><br>Class X ICSE Board<br>95.6% (100 in Computer Applications)</li>                                               
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<!-- <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-pic1.png">
+                <div class="layer">
+                    <h3><b>Real-time Chat Application</b></h3>
+                    <p>The application allows users to send and receive messages instantly over the internet, facilitating live communication between multiple participants around the world.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-pic2.avif">
+                <div class="layer">
+                    <h3><b>MovieGossips</b></h3>
+                    <p>Displays searched movie cast and their information, recommends similar movies and also fetches and categorizes user reviews as good or bad using sentiment analysis.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-pic3.jpg">
+                <div class="layer">
+                    <h3><b> Enhancing Motorcycle Safety with Smart Helmet Technology</b></h3>
+                    <p> Developing a smart helmet system with alcohol detection (alcohol sensor), helmet
+                        compliance verification (IR sensor), distance monitoring (ultrasonic sensor), accident detection (accelerometer),
+                        and emergency communication (GPS and GSM modules).</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>jjsiddhant03@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>+91 - 9170822911</p>
+                <div class="social-icons">
+                    <a href="https://leetcode.com/u/jjsiddhant03/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+                        <path d="M13.8514 3L4.62921 12C3.79026 12.8187 3.79026 14.1462 4.62921 14.9649L10.1841 20.386C11.0231 21.2047 12.3833 21.2047 13.2222 20.386L15.9997 17.6754" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M6.33203 10.3377L10.1836 6.57889C11.0226 5.76016 12.3828 5.76016 13.2217 6.57889L15.9992 9.28943" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M11 13H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></a>
+                    <a href="https://github.com/jain-sid03"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.kaggle.com/siddhantjain03"><i class="fa-brands fa-kaggle"></i></a>
+                    <a href="https://www.instagram.com/jain_siddhant03/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/siddhant-jain-31203021a/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/SiddhantJain_TIETPatiala_102103209.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Siddhant Jain <i class="fas fa-heart"></i> </p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyn5g6oUg2VpYisftplFNWOyiPtnmSbOC0oDjlpW5f8dZ9mCu5Qz61bdMcM96AotHG0xg/exec' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
